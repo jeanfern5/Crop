@@ -8,17 +8,16 @@ class Nav extends Component {
                 <div>Logo Name Here</div>
                 <div className='hover' >Login</div>
             </NavContainer>
-        )
+        );
     };
 };
 
 const NavContainer = styled.nav`
-  color: #0D5752;
   display: flex;
   justify-content: space-between;
 
   &:hover .hover {
-      color: #D8991C;
+      color: #F27927;
   }
 `;
 

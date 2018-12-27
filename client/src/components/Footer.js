@@ -4,12 +4,18 @@ import styled from 'styled-components';
 class Footer extends Component {
     render() {
         return(
-            <h1>Footer</h1>
-            // <FooterContainer>
-          
-            // </FooterContainer>
-        )
+            <FooterContainer>
+                <div>© 2018 Crop. All Rights Reserved.</div>
+            </FooterContainer>
+        );
     };
 };
+
+const FooterContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+`;
+
 
 export default Footer;
