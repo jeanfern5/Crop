@@ -7,15 +7,14 @@ class Footer extends Component {
             <FooterContainer>
                 <div>© 2018 Crop. All Rights Reserved.</div>
             </FooterContainer>
-        )
+        );
     };
 };
 
 const FooterContainer = styled.div`
-  color: #0D5752;
   display: flex;
   justify-content: center;
-
+  font-size: 12px;
 `;
 
 

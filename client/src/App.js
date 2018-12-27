@@ -15,11 +15,12 @@ class App extends Component {
         <Footer />
       </AppContainer>
     );
-  }
-}
+  };
+};
 
 const AppContainer = styled.div`
-  background: #061826;
+  background: #262626;
+  color: #B2CCE5;
   display: flex;
   flex-direction: column; 
   padding: 25px;
