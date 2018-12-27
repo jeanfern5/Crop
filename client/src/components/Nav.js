@@ -18,7 +18,7 @@ const NavContainer = styled.nav`
   justify-content: space-between;
 
   &:hover .hover {
-      color: #C14A2D;
+      color: #D8991C;
   }
 `;
 
