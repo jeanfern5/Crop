@@ -4,12 +4,23 @@ import styled from 'styled-components';
 class Nav extends Component {
     render() {
         return(
-            <h1>Nav</h1>
-            // <NavContainer>
-          
-            // </NavContainer>
+            <NavContainer>
+                <div>Logo Name Here</div>
+                <div className='hover' >Login</div>
+            </NavContainer>
         )
     };
 };
+
+const NavContainer = styled.nav`
+  color: #0D5752;
+  display: flex;
+  justify-content: space-between;
+
+  &:hover .hover {
+      color: #D8991C;
+  }
+`;
+
 
 export default Nav;

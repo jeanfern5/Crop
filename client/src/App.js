@@ -20,6 +20,11 @@ class App extends Component {
 
 const AppContainer = styled.div`
   background: #061826;
+  display: flex;
+  flex-direction: column; 
+  padding: 25px;
+  margin: auto;
+
 `;
 
 export default App;
