@@ -23,6 +23,7 @@ const AppContainer = styled.div`
   color: #B2CCE5;
   display: flex;
   flex-direction: column; 
+  box-sizing: border-box;
   padding: 25px;
   margin: auto;
 
