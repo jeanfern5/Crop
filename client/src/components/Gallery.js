@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+
+
 class Gallery extends Component {
     render() {
         return(
             <GalleryContainer>
+                <GalleryIntro>
+                    <h6>Gallery</h6>
+                    <h6>i</h6>
+
+                </GalleryIntro>
                 <GalleryContent>Yo</GalleryContent>
                 <GalleryBar>
                     <Button>Upload</Button>
@@ -18,6 +25,7 @@ class Gallery extends Component {
 
 //CSS Below ------------------------------------------------------------------
 
+
 const GalleryContainer = styled.div`
     border: 1px solid red;
     width: 27%;
@@ -26,10 +34,16 @@ const GalleryContainer = styled.div`
     display: block;
 `;
 
+const GalleryIntro = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+
 const GalleryContent = styled.div`
     border: 1px solid pink;
     margin-bottom: 10px;
-    height: 714px;
+    height: 660px;
 
 `;
 
