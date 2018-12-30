@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
-
+import { FaInfoCircle } from 'react-icons/fa';
 
 class Gallery extends Component {
     render() {
@@ -9,8 +8,7 @@ class Gallery extends Component {
             <GalleryContainer>
                 <GalleryIntro>
                     <h6>Gallery</h6>
-                    <h6>i</h6>
-
+                    <FaInfoCircle/>
                 </GalleryIntro>
                 <GalleryContent>Yo</GalleryContent>
                 <GalleryBar>
