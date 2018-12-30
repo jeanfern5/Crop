@@ -9,7 +9,7 @@ class Gallery extends Component {
                 <GalleryBar>
                     <Button>Upload</Button>
                     <Button>Export Image</Button>
-                    <Button>Export All Images</Button>
+                    <Button>Export All</Button>
                 </GalleryBar>
             </GalleryContainer>
         );
@@ -19,38 +19,38 @@ class Gallery extends Component {
 //CSS Below ------------------------------------------------------------------
 
 const GalleryContainer = styled.div`
-    background: red;
-    width: 25%;
-    height: 100%;
+    border: 1px solid red;
+    width: 27%;
     padding: 0.75rem;
+    box-sizing: inherit;
+    display: block;
 `;
 
 const GalleryContent = styled.div`
-    background: pink;
+    border: 1px solid pink;
     margin-bottom: 10px;
+    height: 714px;
 
 `;
 
 const GalleryBar = styled.div`
-    background: purple;
+    border: 1px solid purple;
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
 `;
 
 const Button = styled.button`
     background: #F27927;
     border-radius: 0.1875rem;
     font-size:13px;
-    margin: 0.75rem;
+    margin: 10px;
+    padding: 5px;
     overflow: hidden;
-    font-weight: bold;
+    font-weight: 600;
     color: #B2CCE5;
     flex-grow: 1;
-    height: 2.25rem;
     border: none;
     cursor: pointer;
-  
 `;
 
 

@@ -12,7 +12,7 @@ class Editor extends Component {
 };
 
 const EditorContainer = styled.div`
-    background: green;
+    border: 1px solid green;
     width: 75%
 `;
 

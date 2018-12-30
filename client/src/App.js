@@ -26,12 +26,10 @@ const AppContainer = styled.div`
   box-sizing: border-box;
   padding: 1.5625rem;
   margin: auto;
+  width:100%;
+  max-width: 10000px;
   position: fixed;
-  top: 0px;
-  width: 800px;
-  height: 1000px;
   overflow: hidden;
-
 `;
 
 export default App;

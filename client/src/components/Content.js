@@ -20,7 +20,6 @@ const ContentContainer = styled.div`
   box-sizing: border-box;
   margin: 1.25rem 0 1.25rem 0;
   display: flex;
-  justify-content: space-between;
 `;
 
 export default Content;
