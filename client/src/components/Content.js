@@ -18,10 +18,9 @@ class Content extends Component {
 
 const ContentContainer = styled.div`
   box-sizing: border-box;
-  margin: 20px 0 20px 0;
+  margin: 1.25rem 0 1.25rem 0;
   display: flex;
   justify-content: space-between;
-  height: 100%
 `;
 
 export default Content;

@@ -24,8 +24,13 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column; 
   box-sizing: border-box;
-  padding: 25px;
+  padding: 1.5625rem;
   margin: auto;
+  position: fixed;
+  top: 0px;
+  width: 800px;
+  height: 1000px;
+  overflow: hidden;
 
 `;
 
