@@ -5,7 +5,7 @@ import Gallery from './Gallery.js';
 import Editor from './Editor.js';
 
 
-class Content extends Component {
+export default class Content extends Component {
     render() {
         return(
             <ContentContainer>
@@ -22,4 +22,3 @@ const ContentContainer = styled.div`
   display: flex;
 `;
 
-export default Content;

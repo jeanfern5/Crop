@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { FaInfoCircle } from 'react-icons/fa';
-import { Button, Popover, PopoverHeader, PopoverBody, Tooltip } from 'reactstrap';
-// import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-// import { Col, Row, Label, FormGroup, Input, DateTimeField } from 'reactstrap';
-
-  
+import { Tooltip } from 'reactstrap';  
+import ImageUpload from './ImageUpload';
   
 class Gallery extends Component {
     constructor(props) {
@@ -23,42 +20,25 @@ class Gallery extends Component {
           tooltipOpen: !this.state.tooltipOpen
         });
       };
-
-    //   toggle() {
-    //     this.setState({
-    //       modal: !this.state.modal
-    //     });
-    // };
-  
-
-  
  
     render() {
-        const classes = 'tooltip-inner'
-
         return(
             <GalleryContainer>
                 <GalleryIntro>
                     <h6>Gallery</h6>
-
-                    {/* <Button onClick={this.toggle} type="button"><FaInfoCircle/></Button>
-                    <Popover style={{color:'red'}} trigger="focus" placement="bottom" isOpen={this.state.popoverOpen} target="PopoverFocus" toggle={this.toggle}>
-                        <PopoverHeader>Instructions</PopoverHeader>
-                        <PopoverBody>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverBody>
-                    </Popover> */}
-
-                      <p>Somewhere in here is a <span style={{textDecoration: "underline", color:"blue"}} href="#" id="TooltipExample">tooltip</span>.</p>
-        <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="TooltipExample" toggle={this.toggle}>
-          Hello world!
-        </Tooltip>
-
-
-
-
+                      <p id="info"><FaInfoCircle /></p>
+                      <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="info" toggle={this.toggle}>
+                      Instructions:
+                      </Tooltip>
                 </GalleryIntro>
-                <GalleryContent>Yo</GalleryContent>
+                <GalleryContent>
+                    <ImageUpload />
+                </GalleryContent>
                 <GalleryBar>
-                    <Buttons>Upload</Buttons>
+                    {/* <form method="post" enctype="multipart/form-data">
+                    <input type="file" name="imagefile" />
+                    <input type="submit" name="Submit" value="Submit" />
+                    </form> */}
                     <Buttons>Export Image</Buttons>
                     <Buttons>Export All</Buttons>
                 </GalleryBar>

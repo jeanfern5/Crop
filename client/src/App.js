@@ -6,7 +6,7 @@ import Nav from './components/Nav.js';
 import Content from './components/Content.js';
 import Footer from './components/Footer.js';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <AppContainer>
@@ -32,4 +32,3 @@ const AppContainer = styled.div`
   overflow: hidden;
 `;
 
-export default App;

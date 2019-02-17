@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-class Editor extends Component {
+export default class Editor extends Component {
     render() {
         return(
             <EditorContainer>
@@ -17,4 +17,3 @@ const EditorContainer = styled.div`
 `;
 
 
-export default Editor;

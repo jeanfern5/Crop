@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-class Footer extends Component {
+export default class Footer extends Component {
     render() {
         return(
             <FooterContainer>
@@ -18,4 +18,3 @@ const FooterContainer = styled.div`
 `;
 
 
-export default Footer;
